@@ -19,6 +19,7 @@ BuildRequires:	pkgconfig(epoxy)
 BuildRequires:	pkgconfig(lcms2)
 BuildRequires:	pkgconfig(vulkan)
 BuildRequires:	pkgconfig(SPIRV-Tools)
+BuildRequires:	python-mako
 
 %description
 libplacebo is, in a nutshell, the core rendering algorithms and ideas of mpv
