@@ -1,5 +1,5 @@
 %define beta %{nil}
-%define major 104
+%define major 120
 
 %define libname %mklibname placebo %{major}
 %define devname %mklibname -d placebo
