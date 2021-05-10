@@ -1,13 +1,13 @@
-%define beta rc1
-%define major 104
+%define beta %{nil}
+%define major 120
 
 %define libname %mklibname placebo %{major}
 %define devname %mklibname -d placebo
 
 Name:		libplacebo
-Version:	3.104.0
-Release:	%{?beta:0.%{beta}.}1
-Source0:	https://code.videolan.org/videolan/libplacebo/-/archive/v%{version}%{?beta:-%{beta}}/libplacebo-v%{version}%{?beta:-%{beta}}.tar.bz2
+Version:	3.120.3
+Release:	1
+Source0:	https://code.videolan.org/videolan/libplacebo/-/archive/v%{version}/libplacebo-v%{version}.tar.bz2
 Patch0:		libplacebo-dont-search-for-glslang-static-helpers.patch
 Group:		System/Libraries
 Summary:	Video rendering library
@@ -50,7 +50,7 @@ As of today, libplacebo contains a large assortment of video processing
 shaders, focusing on both quality and performance.
 
 %prep
-%autosetup -p1 -n %{name}-v%{version}%{?beta:-%{beta}}
+%autosetup -p1 -n %{name}-v%{version}
 %meson
 
 %build
