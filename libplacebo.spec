@@ -1,11 +1,11 @@
-%define beta rc1
+%define beta %{nil}
 %define major 104
 
 %define libname %mklibname placebo %{major}
 %define devname %mklibname -d placebo
 
 Name:		libplacebo
-Version:	3.104.0
+Version:	3.120.3
 Release:	%{?beta:0.%{beta}.}1
 Source0:	https://code.videolan.org/videolan/libplacebo/-/archive/v%{version}%{?beta:-%{beta}}/libplacebo-v%{version}%{?beta:-%{beta}}.tar.bz2
 Patch0:		libplacebo-dont-search-for-glslang-static-helpers.patch
