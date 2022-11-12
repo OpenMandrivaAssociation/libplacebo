@@ -17,7 +17,7 @@ BuildRequires:	pkgconfig(shaderc)
 BuildRequires:	glslang-devel
 BuildRequires:	pkgconfig(epoxy)
 BuildRequires:	pkgconfig(lcms2)
-BuildRequires:  pkgconfig(libunwind-llvm)
+BuildRequires:  pkgconfig(libunwind)
 BuildRequires:	pkgconfig(vulkan)
 BuildRequires:	pkgconfig(SPIRV-Tools)
 BuildRequires:	python-mako
