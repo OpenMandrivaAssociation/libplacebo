@@ -13,8 +13,10 @@ Group:		System/Libraries
 Summary:	Video rendering library
 License:	LGPLv2.1+
 BuildRequires:	meson ninja
-BuildRequires:	pkgconfig(shaderc)
+BuildRequires:	glslc
+BuildRequires:	glslang
 BuildRequires:	glslang-devel
+BuildRequires:	pkgconfig(shaderc)
 BuildRequires:	pkgconfig(epoxy)
 BuildRequires:	pkgconfig(lcms2)
 BuildRequires:  pkgconfig(libunwind)
@@ -52,7 +54,11 @@ shaders, focusing on both quality and performance.
 
 %prep
 %autosetup -p1 -n %{name}-v%{version}
-%meson
+%meson \
+       -Dvulkan=enabled \
+       -Dopengl=enabled \
+       -Dshaderc=enabled \
+       -Dlcms=enabled
 
 %build
 %meson_build
