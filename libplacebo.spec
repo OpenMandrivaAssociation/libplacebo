@@ -13,6 +13,7 @@ Group:		System/Libraries
 Summary:	Video rendering library
 License:	LGPLv2.1+
 BuildRequires: meson ninja
+BuildRequires: glad
 BuildRequires: glslc
 BuildRequires: glslang
 BuildRequires: glslang-devel
