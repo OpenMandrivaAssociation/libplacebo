@@ -12,17 +12,17 @@ Source0:	https://code.videolan.org/videolan/libplacebo/-/archive/v%{version}/lib
 Group:		System/Libraries
 Summary:	Video rendering library
 License:	LGPLv2.1+
-BuildRequires:	meson ninja
-BuildRequires:	glslc
-BuildRequires:	glslang
-BuildRequires:	glslang-devel
-BuildRequires:	pkgconfig(shaderc)
-BuildRequires:	pkgconfig(epoxy)
-BuildRequires:	pkgconfig(lcms2)
-BuildRequires:  pkgconfig(libunwind)
-BuildRequires:	pkgconfig(vulkan)
-BuildRequires:	pkgconfig(SPIRV-Tools)
-BuildRequires:	python-mako
+BuildRequires: meson ninja
+BuildRequires: glslc
+BuildRequires: glslang
+BuildRequires: glslang-devel
+BuildRequires: pkgconfig(shaderc)
+BuildRequires: pkgconfig(epoxy)
+BuildRequires: pkgconfig(lcms2)
+BuildRequires: pkgconfig(libunwind)
+BuildRequires: pkgconfig(vulkan)
+BuildRequires: pkgconfig(SPIRV-Tools)
+BuildRequires: python-mako
 
 %description
 libplacebo is, in a nutshell, the core rendering algorithms and ideas of mpv
@@ -58,6 +58,7 @@ shaders, focusing on both quality and performance.
        -Dvulkan=enabled \
        -Dopengl=enabled \
        -Dshaderc=enabled \
+       -Dglslang=disabled \
        -Dlcms=enabled
 
 %build
