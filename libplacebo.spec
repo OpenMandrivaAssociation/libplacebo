@@ -59,6 +59,7 @@ shaders, focusing on both quality and performance.
        -Dopengl=enabled \
        -Dshaderc=enabled \
        -Dglslang=disabled \
+       -Dd3d11=disabled \
        -Dlcms=enabled
 
 %build
