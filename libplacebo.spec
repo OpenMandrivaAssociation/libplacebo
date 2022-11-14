@@ -81,4 +81,5 @@ shaders, focusing on both quality and performance.
 %{_libdir}/pkgconfig/*.pc
 %{_includedir}/libplacebo
 
-#files
+%files
+%{_bindir}/plplay
