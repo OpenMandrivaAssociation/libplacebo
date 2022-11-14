@@ -29,6 +29,8 @@ BuildRequires: pkgconfig(vulkan)
 BuildRequires: pkgconfig(SPIRV-Tools)
 BuildRequires: python-mako
 
+Requires:	%{libname} = %{EVRD}
+
 %description
 libplacebo is, in a nutshell, the core rendering algorithms and ideas of mpv
 rewritten as an independent library.
@@ -49,6 +51,7 @@ shaders, focusing on both quality and performance.
 %package -n %{devname}
 Summary:	Development files for the %{name} video rendering library
 Requires:	%{libname} = %{EVRD}
+Requires:	%{name} = %{EVRD}
 
 %description -n %{devname}
 libplacebo is, in a nutshell, the core rendering algorithms and ideas of mpv
