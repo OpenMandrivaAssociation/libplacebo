@@ -1,5 +1,5 @@
 %define beta %{nil}
-%define major 120
+%define major 229
 
 %define libname %mklibname placebo %{major}
 %define devname %mklibname -d placebo
@@ -17,6 +17,10 @@ BuildRequires: glad
 BuildRequires: glslc
 BuildRequires: glslang
 BuildRequires: glslang-devel
+BuildRequires: pkgconfig(libavcodec)
+BuildRequires: pkgconfig(glfw3)
+BuildRequires: pkgconfig(sdl2)
+BuildRequires: pkgconfig(SDL2_image)
 BuildRequires: pkgconfig(shaderc)
 BuildRequires: pkgconfig(epoxy)
 BuildRequires: pkgconfig(lcms2)
