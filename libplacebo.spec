@@ -5,7 +5,7 @@
 %define devname %mklibname -d placebo
 
 Name:		libplacebo
-Version:	5.229.1
+Version:	5.229.2
 Release:	1
 Source0:	https://code.videolan.org/videolan/libplacebo/-/archive/v%{version}/libplacebo-v%{version}.tar.bz2
 #Patch0:		libplacebo-dont-search-for-glslang-static-helpers.patch
