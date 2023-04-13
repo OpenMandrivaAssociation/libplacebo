@@ -1,12 +1,13 @@
 %define beta %{nil}
-%define major 229
+%define major 264
 
-%define libname %mklibname placebo %{major}
+%define oldlibname %mklibname placebo 229
+%define libname %mklibname placebo
 %define devname %mklibname -d placebo
 
 Name:		libplacebo
-Version:	5.229.2
-Release:	2
+Version:	5.264.1
+Release:	1
 Source0:	https://code.videolan.org/videolan/libplacebo/-/archive/v%{version}/libplacebo-v%{version}.tar.bz2
 #Patch0:		libplacebo-dont-search-for-glslang-static-helpers.patch
 Group:		System/Libraries
@@ -27,6 +28,7 @@ BuildRequires: pkgconfig(lcms2)
 BuildRequires: pkgconfig(libunwind)
 BuildRequires: pkgconfig(vulkan)
 BuildRequires: pkgconfig(SPIRV-Tools)
+BuildRequires: pkgconfig(dovi)
 BuildRequires: python-mako
 
 Requires:	%{libname} = %{EVRD}
@@ -40,6 +42,7 @@ shaders, focusing on both quality and performance.
 
 %package -n %{libname}
 Summary:	Video rendering library
+Obsoletes:	%{oldlibname} < %{EVRD}
 
 %description -n %{libname}
 libplacebo is, in a nutshell, the core rendering algorithms and ideas of mpv
