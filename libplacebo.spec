@@ -5,6 +5,10 @@
 %define libname %mklibname placebo
 %define devname %mklibname -d placebo
 
+# libplacebo doesn't like -Os because of the _Float32 confusion
+# (causes build time error)
+%global optflags %{optflags} -O3
+
 Name:		libplacebo
 Version:	6.338.1
 Release:	1
