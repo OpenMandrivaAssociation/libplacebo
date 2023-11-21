@@ -29,6 +29,7 @@ BuildRequires: pkgconfig(libunwind)
 BuildRequires: pkgconfig(vulkan)
 BuildRequires: pkgconfig(SPIRV-Tools)
 BuildRequires: pkgconfig(dovi)
+BuildRequires: pkgconfig(libxxhash)
 BuildRequires: python-mako
 
 Requires:	%{libname} = %{EVRD}
