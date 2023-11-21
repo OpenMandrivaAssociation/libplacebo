@@ -1,15 +1,15 @@
 %define beta %{nil}
-%define major 264
+%define major 338
 
 %define oldlibname %mklibname placebo 229
 %define libname %mklibname placebo
 %define devname %mklibname -d placebo
 
 Name:		libplacebo
-Version:	5.264.1
+Version:	6.338.1
 Release:	1
 Source0:	https://code.videolan.org/videolan/libplacebo/-/archive/v%{version}/libplacebo-v%{version}.tar.bz2
-#Patch0:		libplacebo-dont-search-for-glslang-static-helpers.patch
+Patch0:		libplacebo-6.338-demos-buildfix.patch
 Group:		System/Libraries
 Summary:	Video rendering library
 License:	LGPLv2.1+
