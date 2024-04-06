@@ -11,7 +11,7 @@
 
 Name:		libplacebo
 Version:	6.338.2
-Release:	1
+Release:	2
 Source0:	https://code.videolan.org/videolan/libplacebo/-/archive/v%{version}/libplacebo-v%{version}.tar.bz2
 Patch0:		libplacebo-6.338-demos-buildfix.patch
 Group:		System/Libraries
