@@ -1,5 +1,5 @@
 %define beta %{nil}
-%define major 351
+%define major 360
 
 %define oldlibname %mklibname placebo 229
 %define libname %mklibname placebo
@@ -10,8 +10,8 @@
 %global optflags %{optflags} -O3
 
 Name:		libplacebo
-Version:	7.351.0
-Release:	2
+Version:	7.360.1
+Release:	1
 Source0:	https://code.videolan.org/videolan/libplacebo/-/archive/v%{version}/libplacebo-v%{version}.tar.bz2
 Group:		System/Libraries
 Summary:	Video rendering library
